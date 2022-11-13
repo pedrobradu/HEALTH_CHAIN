@@ -5,4 +5,10 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+
+  get "pages/operator", to: "pages#operator"
+
+  resources :histories
+  resources :smart_contracts
+
 end

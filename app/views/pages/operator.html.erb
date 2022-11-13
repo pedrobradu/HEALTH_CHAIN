@@ -4,16 +4,12 @@
       <div class="form-wrap">
 
         <div class="text-center my-5">
-          <h2>Histórico</h2>
+          <h2>Smart Contract</h2>
         </div> 
 
-        <%= simple_form_for(@history) do |f| %>
+        <%= simple_form_for(@smart_contract) do |f| %>
           <div class="form-inputs">
-            <%= f.input :name,
-                        required: false %>
-            <%= f.input :document,
-                        required: false %>
-            <%= f.input :wallet,
+            <%= f.input :user_key,
                         required: false %>
           </div>
 
